@@ -1,0 +1,82 @@
+body {
+    background-color: var(--bs-body-bg)
+}
+
+#auth {
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url("../png/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    transition: .5s ease-in-out;
+}
+
+html[data-bs-theme=dark] #auth {
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url("../png/logindark.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    transition: .5s ease-in-out;
+}
+
+#auth #auth-right {
+    height: 100%;
+
+}
+
+#auth #auth-left {
+    padding: 3rem;
+    height: 100%;
+    background-color: var(--bs-body-bg);
+    opacity: .94;
+    border-radius: 0 8% 8% 0;
+}
+
+#auth #auth-left .auth-title {
+    font-size: 4rem;
+    margin-bottom: 1rem
+}
+
+#auth #auth-left .auth-subtitle {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: #a8aebb
+}
+
+#auth #auth-left .auth-logo {
+    margin-bottom: 1rem
+}
+
+#auth #auth-left .auth-logo img {
+    height: 6rem
+}
+
+@media screen and (max-width: 1399.9px) {
+    #auth #auth-left {
+        padding: 3rem
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #auth #auth-left {
+        padding: 5rem;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #auth #auth-left {
+        padding: 5rem;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #auth #auth-left {
+        padding: 5rem 3rem;
+        border-radius: 0;
+    }
+}
